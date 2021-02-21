@@ -10,7 +10,7 @@ from accountapp.serializers import *
 class AccountViewSet(mixins.CreateModelMixin,
                      mixins.ListModelMixin,
                      mixins.UpdateModelMixin,
-                     mixins.RetrievßeModelMixin,
+                     mixins.RetrieveModelMixin,
                      GenericViewSet):
     lookup_field = "id"
     permission_classes = [permissions.AllowAny, ]
