@@ -14,8 +14,8 @@ Including another URLconf
 """
 from django.urls import include, path
 from rest_framework import routers
-
-from account import views
+ß
+from accountapp import views
 
 router = routers.DefaultRouter()
 router.register(r'accounts', views.AccountViewSet, basename="accounts")

@@ -6,9 +6,9 @@
 """
 from rest_framework import serializers
 
-import account.models
+import accountapp.models
 
-
+ß
 class AccountSerializer(serializers.ModelSerializer):
     # mount = serializers.IntegerField()
     class Meta:

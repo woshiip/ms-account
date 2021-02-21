@@ -3,14 +3,14 @@
 from rest_framework import permissions
 from rest_framework.viewsets import GenericViewSet, mixins
 
-from account.models import Account
-from account.serializers import *
+from accountapp.models import Account
+from accountapp.serializers import *
 
 
 class AccountViewSet(mixins.CreateModelMixin,
                      mixins.ListModelMixin,
                      mixins.UpdateModelMixin,
-                     mixins.RetrieveModelMixin,
+                     mixins.RetrievßeModelMixin,
                      GenericViewSet):
     lookup_field = "id"
     permission_classes = [permissions.AllowAny, ]
