@@ -8,9 +8,8 @@ from rest_framework import serializers
 
 import accountapp.models
 
-ß
 class AccountSerializer(serializers.ModelSerializer):
     # mount = serializers.IntegerField()
     class Meta:
-        model = account.models.Account
+        model = accountapp.models.Account
         fields = '__all__'
