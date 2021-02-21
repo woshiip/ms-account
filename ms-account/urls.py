@@ -14,13 +14,12 @@ Including another URLconf
 """
 from django.urls import include, path
 from rest_framework import routers
-ß
 from accountapp import views
 
 router = routers.DefaultRouter()
 router.register(r'accounts', views.AccountViewSet, basename="accounts")
 
 urlpatterns = [
-    path('api/', include((router.urls,"accouting"),namespace="account-service")),
-    # url(r'^admin/', include(admin.site.urls)),
+    path('api/', include((router.urls, "accouting"),namespace="ms-account")),
+    # url(r'^admin/', include(admin.site.urls)),ß
     ]

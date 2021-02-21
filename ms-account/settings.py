@@ -105,7 +105,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
     )
 
-ROOT_URLCONF = 'serviceB.urls'
+ROOT_URLCONF = 'ms-account.urls'
 
 TEMPLATES = [
     {
@@ -123,7 +123,7 @@ TEMPLATES = [
         },
     ]
 
-WSGI_APPLICATION = 'serviceB.wsgi.application'
+WSGI_APPLICATION = 'ms-account.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
