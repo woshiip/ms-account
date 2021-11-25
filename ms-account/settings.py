@@ -24,7 +24,7 @@ SECRET_KEY = '#t^5@&ze2$$wlle(&cqt*25szg$+0q)uv36qcp^$4(o$lve2uz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['49.234.106.217','127.0.0.1',]
+ALLOWED_HOSTS = [*]
 
 # Application definition
 REST_FRAMEWORK = {
