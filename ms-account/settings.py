@@ -24,7 +24,7 @@ SECRET_KEY = '#t^5@&ze2$$wlle(&cqt*25szg$+0q)uv36qcp^$4(o$lve2uz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['104.197.239.117','127.0.0.1',]
+ALLOWED_HOSTS = ['49.234.106.217','127.0.0.1',]
 
 # Application definition
 REST_FRAMEWORK = {
@@ -130,13 +130,8 @@ WSGI_APPLICATION = 'ms-account.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'accounts',
-        'USER': 'root',         # 数据库用户名
-        'PASSWORD': '123456',     # 密码
-        #'HOST': '10.108.6.19',    # 主机
-        'HOST': os.getenv('MYSQL_HOST_ADDRESS', '10.108.6.19'),
-        'PORT': '3306',         # 数据库使用的端口
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
 
